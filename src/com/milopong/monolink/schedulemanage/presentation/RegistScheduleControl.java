@@ -53,7 +53,6 @@ public class RegistScheduleControl {
 		schedule.setScope("public");
 		schedule.setBookmark("false");
 		rootScheduleNo = scheduleManager.regist(schedule);
-System.out.println("Hello");
 		if (friends != null) {
 			for (int i = 0; i < friends.size(); i++) {
 				Utility.sendGcmMessage(friends.get(i).getGcmId(), member.getName() + "님이 회원님을 일정에 초대 했습니다.");
